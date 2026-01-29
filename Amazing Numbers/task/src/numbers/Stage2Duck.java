@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 
-public class Main {
+public class Stage2Duck {
 
     private Map<String, Boolean> properties = new HashMap<>();
 
