@@ -1,0 +1,44 @@
+project: Amazing Numbers
+language: Java
+architecture_evolution: "Procedural (Stages 1-4) -> Polymorphic Enum (Stages 5-8)"
+
+history:
+  - stage: 1
+    title: "Buzz Numbers"
+    commit_header: "feat: parity check and buzz number logic"
+    description: "Initial setup for natural number input. Implemented modular arithmetic to identify Even, Odd, and Buzz numbers (divisible by 7 or ending in 7)."
+
+  - stage: 2
+    title: "Duck Numbers"
+    commit_header: "feat: add duck number logic and input validation"
+    description: "Implemented digit-based search for '0' and added robust error handling for non-natural number inputs."
+
+  - stage: 3
+    title: "Palindromic Numbers"
+    commit_header: "feat: palindromic numbers and property mapping"
+    description: "Added string-reversal logic. Transitioned to a Map<String, Boolean> structure to store number properties dynamically."
+
+  - stage: 4
+    title: "Gapful Numbers"
+    commit_header: "feat: gapful numbers and range requests"
+    description: "Introduced logic for numbers divisible by the concatenation of their first and last digits. Updated UI to support consecutive range requests."
+
+  - stage: 5
+    title: "Spy Numbers"
+    commit_header: "refactor: migrate to polymorphic Enum architecture"
+    description: "MAJOR REFACTOR: Replaced procedural methods with an abstract Enum-based testing engine to handle Spy number logic and improve scalability."
+
+  - stage: 6
+    title: "Sunny and Square Numbers"
+    commit_header: "feat: add sunny and square numbers to Enum engine"
+    description: "Leveraged the new Enum architecture to easily integrate Square and Sunny (n+1 is square) property checks."
+
+  - stage: 7
+    title: "Jumping Numbers"
+    commit_header: "feat: implement jumping numbers and multi-property search"
+    description: "Implemented digit-adjacency logic (diff of 1). Expanded request handling to allow searching for multiple properties simultaneously."
+
+  - stage: 8
+    title: "Happy and Sad Numbers"
+    commit_header: "feat: finalize happy numbers and negative filters"
+    description: "Implemented recursive square-sum logic for Happy numbers. Completed the engine with support for exclusionary '-property' filtering and logical contradiction detection."
