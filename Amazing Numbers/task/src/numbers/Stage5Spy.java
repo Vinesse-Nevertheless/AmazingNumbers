@@ -97,7 +97,7 @@ enum Properties {
 }
 
 public class Stage5Spy {
-     Scanner in;
+    
     {
         System.out.println("Welcome to Amazing Numbers!\n\n" +
                 "Supported requests:\n" +
@@ -116,6 +116,7 @@ public class Stage5Spy {
     }
 
     private void makeRequest() {
+        Scanner in;
         while (true) {
             in = new Scanner(System.in);
             System.out.print("\nEnter a request: ");
