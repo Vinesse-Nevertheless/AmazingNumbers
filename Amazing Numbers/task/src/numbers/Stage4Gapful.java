@@ -4,9 +4,10 @@ import java.text.NumberFormat;
 import java.util.*;
 
 public class Stage4Gapful {
-
+   
     private Map<String, Boolean> properties;
-
+    Scanner in;
+    
     public static void main(String[] args) {
         Stage4Gapful init = new Stage4Gapful();
         System.out.println("Welcome to Amazing Numbers!\n");
@@ -31,7 +32,7 @@ public class Stage4Gapful {
 
     private void requestNumber() {
         while (true) {
-            Scanner in = new Scanner(System.in);
+            in = new Scanner(System.in);
             System.out.print("\nEnter a request: ");
             String request = in.nextLine();
             System.out.println();
@@ -47,6 +48,7 @@ public class Stage4Gapful {
                 printOptions();
             }
         }
+         in.close();
     }
 
 
