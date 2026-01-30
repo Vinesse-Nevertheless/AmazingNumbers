@@ -112,7 +112,7 @@ enum Properties {
 
 public class Stage6SunnySquare {
     private final Map<Properties, Integer> bannedCombos = new HashMap<>();
-    Scanner in;
+
     {
         System.out.println("Welcome to Amazing Numbers!\n\n" +
                 "Supported requests:\n" +
@@ -141,6 +141,7 @@ public class Stage6SunnySquare {
     }
 
     private void makeRequest() {
+        Scanner in;
         while (true) {
             in = new Scanner(System.in);
             System.out.print("\nEnter a request: ");
