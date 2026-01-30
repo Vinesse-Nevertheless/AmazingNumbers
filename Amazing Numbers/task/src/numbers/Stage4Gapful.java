@@ -6,7 +6,6 @@ import java.util.*;
 public class Stage4Gapful {
    
     private Map<String, Boolean> properties;
-    Scanner in;
     
     public static void main(String[] args) {
         Stage4Gapful init = new Stage4Gapful();
@@ -31,6 +30,7 @@ public class Stage4Gapful {
 
 
     private void requestNumber() {
+        Scanner in;
         while (true) {
             in = new Scanner(System.in);
             System.out.print("\nEnter a request: ");
