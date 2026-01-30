@@ -162,6 +162,7 @@ enum Properties {
 
 public class Main {
     String[][] bannedCombos;
+    Scanner in;
     {
         System.out.println("Welcome to Amazing Numbers!\n\n" +
                 "Supported requests:\n" +
@@ -192,7 +193,7 @@ public class Main {
 
     private void makeRequest() {
         while (true) {
-            Scanner in = new Scanner(System.in);
+            in = new Scanner(System.in);
             System.out.print("\nEnter a request: ");
             String request = in.nextLine();
             System.out.println();
@@ -229,6 +230,7 @@ public class Main {
                 }
             }
         }
+        in.close();
     }
 
     boolean excludes(long num, List<Properties> exclusions) {
