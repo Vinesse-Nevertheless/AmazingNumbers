@@ -25,6 +25,7 @@ public class Stage1Buzz {
         } catch (Exception e) {
             System.out.println("This is not a whole number.");
         }
+        in.close();
     }
 
     boolean isNaturalNum(int num) {
