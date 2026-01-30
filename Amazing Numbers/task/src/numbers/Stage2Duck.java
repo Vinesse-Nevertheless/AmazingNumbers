@@ -30,6 +30,7 @@ public class Stage2Duck {
         } catch (Exception e) {
             System.out.println("This is not a whole number.");
         }
+        in.close();
     }
 
     private boolean isNaturalNum(int num) {
