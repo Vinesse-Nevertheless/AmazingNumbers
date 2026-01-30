@@ -53,6 +53,7 @@ public class Stage3Palindromic {
                 System.out.println("This is not a whole number.");
             }
         }
+        in.close();
     }
 
     private boolean isNaturalNum(long num) {
