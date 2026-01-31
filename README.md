@@ -34,7 +34,7 @@ LongStream.iterate(start, n -> 1 + n)
 ## 💻 How to Run
 
 ### Prerequisites
-* **JDK 17** or higher.
+* **JDK 23** or higher.
 * A terminal or IDE (IntelliJ IDEA recommended).
 
 ### Commands
